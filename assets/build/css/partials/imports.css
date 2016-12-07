@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  src: url("../fonts/maisonneue-light.woff2") format("woff"); }
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 400;
+  src: url("../fonts/maisonneue-book.woff2") format("woff"); }
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 700;
+  src: url("../fonts/maisonneue-bold.woff2") format("woff"); }
