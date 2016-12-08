@@ -18,7 +18,6 @@ $minxlg: "(min-width: 1800px)";
 $minlg: "(min-width: 1600px)";
 $minmd1: "(min-width: 1400px)";
 $minmd2: "(min-width: 1200px)";
-
 // Reset css
 html,
 body,
@@ -251,6 +250,7 @@ body {
         -o-transition: all .25s ease;
         -webkit-transition: all .25s ease;
         transition: all .25s ease;
+        overflow-y: auto;
         @media only screen and #{$md} {
             width: 62px;
         }
@@ -326,6 +326,7 @@ body {
                     }
                 }
             }
+            // Sidebar Navbar
             .sidebar_navbar_wrapper {
                 display: block;
                 margin-top: 45px;
@@ -403,6 +404,20 @@ body {
                                     }
                                 }
                             }
+                            b {
+                                font-size: 11px;
+                                line-height: 19px;
+                                font-weight: 400;
+                                color: #ffffff;
+                                background: #b0bec5;
+                                width: 25px;
+                                height: 18px;
+                                border-radius: 10px;
+                                text-align: center;
+                                right: -60px;
+                                position: absolute;
+                                top: 20px;
+                            }
                             &:hover {
                                 color: #384850;
                                 opacity: 1;
@@ -417,6 +432,45 @@ body {
                                 opacity: 1;
                             }
                         }
+                    }
+                }
+            }
+            // Sidebar Footer
+            footer {
+                &.footer_info_wrap {
+                    font-family: $font-family;
+                    font-weight: 300;
+                    position: absolute;
+                    bottom: 10px;
+                    @media only screen and #{$md} {
+                        display: none;
+                    }
+                    span {
+                        &.bdr {
+                            width: 30px;
+                            height: 1px;
+                            background: #d0d9dd;
+                            display: inline-block;
+                            margin-bottom: 18px;
+                        }
+                    }
+                    h3 {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #37474f;
+                        margin: 0 0 10px 0;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $primary_color;
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #41a5f7;
+                        display: inline-block;
+                        margin-top: 8px;
                     }
                 }
             }
@@ -467,10 +521,10 @@ body {
                     width: 100%;
                     height: 60px;
                     line-height: 100px;
-                    padding: 20px;
+                    padding: 0 25px;
                     background: #fe763a;
                     border: none;
-                    border-radius: 4px;
+                    border-radius: 50px;
                     font-size: 24px;
                     line-height: 28px;
                     color: #fff;
@@ -497,7 +551,7 @@ body {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: rgba(255, 255, 255, 0.8);
+                background-color: rgba(255, 255, 255, 0.9);
                 height: 100%;
                 z-index: 9;
                 visibility: hidden;
@@ -560,6 +614,7 @@ body {
                             }
                             a {
                                 &.brand {
+                                    font-family: $font-family;
                                     color: #384850;
                                     font-size: 30px;
                                     line-height: 35px;
@@ -570,7 +625,7 @@ body {
                                     }
                                     span {
                                         color: $primary_color;
-                                        margin-left: 20px;
+                                        margin-left: 30px;
                                         @media only screen and #{$sm} {
                                             margin-left: 10px;
                                         }
@@ -682,6 +737,7 @@ body {
                         }
                     }
                 }
+                // Articles section
                 .article_section_wrapper {
                     font-family: $font-family;
                     margin: 50px 0;
@@ -724,9 +780,25 @@ body {
                                     border-radius: 50%;
                                     text-align: center;
                                     display: inline-block;
+                                    -webkit-transform: scale(1);
+                                    -moz-transform: scale(1);
+                                    -ms-transform: scale(1);
+                                    -o-transform: scale(1);
+                                    transform: scale(1);
+                                    -webkit-transition: -webkit-transform .3s;
+                                    -moz-transition: -moz-transform .3s;
+                                    transition: transform .3s;
                                     &:hover {
                                         background: $btn_hover;
                                         box-shadow: 0 5px 40px rgba(0, 0, 0, .15);
+                                        -webkit-transform: scale(1.2);
+                                        -moz-transform: scale(1.2);
+                                        -ms-transform: scale(1.2);
+                                        -o-transform: scale(1.2);
+                                        transform: scale(1.2);
+                                        -webkit-transition: -webkit-transform .3s;
+                                        -moz-transition: -moz-transform .3s;
+                                        transition: transform .3s;
                                     }
                                     i {
                                         vertical-align: middle;
@@ -737,6 +809,7 @@ body {
                             }
                         }
                     }
+                    // Article Lists 
                     .article_lists_wrap {
                         margin: 0 -15px;
                         article {
@@ -758,14 +831,26 @@ body {
                                     &:hover {
                                         box-shadow: 0 5px 50px rgba(0, 0, 0, .1);
                                         .article_image {
-                                            opacity: .8;
+                                            border-top-left-radius: 4px;
+                                            border-top-right-radius: 4px;
+                                            opacity: .95;
+                                            .bg {
+                                                -webkit-transform: scale(1.4);
+                                                -moz-transform: scale(1.4);
+                                                -ms-transform: scale(1.4);
+                                                -o-transform: scale(1.4);
+                                                transform: scale(1.4);
+                                                -webkit-transition: -webkit-transform 8.6s;
+                                                -moz-transition: -moz-transform 8.6s;
+                                                transition: transform 8.6s;
+                                                border-top-left-radius: 4px;
+                                                border-top-right-radius: 4px;
+                                            }
                                         }
                                     }
                                     .article_image {
-                                        background-size: cover!important;
                                         height: 180px;
-                                        background-repeat: no-repeat!important;
-                                        background-position: center!important;
+                                        overflow: hidden;
                                         border-top-left-radius: 4px;
                                         border-top-right-radius: 4px;
                                         @media only screen and #{$lg} {
@@ -795,22 +880,30 @@ body {
                                         @media only screen and #{$xs} {
                                             height: 150px;
                                         }
-                                        &.article1 {
+                                        .bg {
+                                            background-size: cover!important;
+                                            background-repeat: no-repeat!important;
+                                            background-position: center!important;
+                                            border-top-left-radius: 4px;
+                                            border-top-right-radius: 4px;
+                                            height: 100%;
+                                        }
+                                        .article1 {
                                             background: url('../../images/articles/article1.jpeg') no-repeat;
                                         }
-                                        &.article2 {
+                                        .article2 {
                                             background: url('../../images/articles/article2.jpeg') no-repeat;
                                         }
-                                        &.article3 {
+                                        .article3 {
                                             background: url('../../images/articles/article3.png') no-repeat;
                                         }
-                                        &.article4 {
+                                        .article4 {
                                             background: url('../../images/articles/article4.jpg') no-repeat;
                                         }
-                                        &.article5 {
+                                        .article5 {
                                             background: url('../../images/articles/article5.jpg') no-repeat;
                                         }
-                                        &.article6 {
+                                        .article6 {
                                             background: url('../../images/articles/article6.jpg') no-repeat;
                                         }
                                     }
