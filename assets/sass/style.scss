@@ -185,7 +185,7 @@ body {
     font-family: $font-family;
     // Sprite icons
     .sprite {
-        background: url('../../images/sprite.png') no-repeat top left;
+        background: url('../../../images/sprite.png') no-repeat top left;
         width: 12px;
         height: 22px;
         display: inline-block;
@@ -889,22 +889,22 @@ body {
                                             height: 100%;
                                         }
                                         .article1 {
-                                            background: url('../../images/articles/article1.jpeg') no-repeat;
+                                            background: url('../../../images/articles/article1.jpeg') no-repeat;
                                         }
                                         .article2 {
-                                            background: url('../../images/articles/article2.jpeg') no-repeat;
+                                            background: url('../../../images/articles/article2.jpeg') no-repeat;
                                         }
                                         .article3 {
-                                            background: url('../../images/articles/article3.png') no-repeat;
+                                            background: url('../../../images/articles/article3.png') no-repeat;
                                         }
                                         .article4 {
-                                            background: url('../../images/articles/article4.jpg') no-repeat;
+                                            background: url('../../../images/articles/article4.jpg') no-repeat;
                                         }
                                         .article5 {
-                                            background: url('../../images/articles/article5.jpg') no-repeat;
+                                            background: url('../../../images/articles/article5.jpg') no-repeat;
                                         }
                                         .article6 {
-                                            background: url('../../images/articles/article6.jpg') no-repeat;
+                                            background: url('../../../images/articles/article6.jpg') no-repeat;
                                         }
                                     }
                                     .article_header_wrapper {
